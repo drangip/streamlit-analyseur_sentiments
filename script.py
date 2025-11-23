@@ -9,4 +9,4 @@ sentiment_analyzer = pipeline("sentiment-analysis", model="nlptown/bert-base-mul
 
 if text:
     result = sentiment_analyzer(text)[0]
-    st.write(f"Label: {resultat['label']}, Score: {resultat['score']:.4f}")
+    st.write(f"Label: {result['label']}, Score: {result['score']:.4f}")
